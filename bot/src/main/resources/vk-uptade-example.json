@@ -1,0 +1,40 @@
+{
+  "group_id": 2.26055102E8,
+  "type": "message_new",
+  "event_id": "4d8d94f87face4b53d24ba55d84d5fe6cafe8a2b",
+  "v": 5.236,
+  "object": {
+    "message": {
+      "date": 1.716837431E9,
+      "from_id": 7.84458999E8,
+      "id": 46.0,
+      "out": 0.0,
+      "version": 1.0000071E7,
+      "attachments": [],
+      "conversation_message_id": 23.0,
+      "fwd_messages": [],
+      "important": false,
+      "is_hidden": false,
+      "peer_id": 7.84458999E8,
+      "random_id": 0.0,
+      "text": "dad",
+      "is_mentioned_user": false
+    },
+    "client_info": {
+      "button_actions": [
+        "text",
+        "vkpay",
+        "open_app",
+        "location",
+        "open_link",
+        "callback",
+        "intent_subscribe",
+        "intent_unsubscribe"
+      ],
+      "keyboard": true,
+      "inline_keyboard": true,
+      "carousel": true,
+      "lang_id": 3.0
+    }
+  }
+}

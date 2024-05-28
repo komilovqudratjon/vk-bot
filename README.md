@@ -1,1 +1,16 @@
 # vk-bot
+
+
+get access token from vk.com
+https://oauth.vk.com/blank.html#access_token=vk1.a.6wn9ArM9vQBtJYLCf2xnbUr3z6QKhHVyN66jD6hz7mO9IEgTg0Di-kcAPM8s6VXsiu45WcVZMi9pxonS8qfhcSj9S2po2mz5AYmOhgFTl4f17O2elZkDtdfv-cXdxDA1kPJZyJpqpVIcKvYQxVcUPvoV4La87otBP9F_rTaf9eXeqNxZYJomEwpoSX4Oq0rBlC8wsAM2yZy6lpMAp2lJfg&expires_in=0&user_id=784458999
+
+
+
+
+
+https://oauth.vk.com/blank.html#access_token=vk1.a.99mnW1eOzr7HyfQUFo0iV9CyrBVehQ0k7S867EBlwebzoykPY5LUOOQbcJksHE9ZnvznMCPumVkeBt0vPCGdWYEDUh6HT2sbdLVB-9oUshTs3LHWXXsBXEIqi0ttAUshdNuERYRz5vN3RcsQ85c5ulDiNH_s4GZUzzHq90mgKSHHFRcBH_ij4L-vlpOBwnVgZg-YD9g0S8ssDEIZnyau9Q&expires_in=0&user_id=784458999
+
+
+token = vk1.a.99mnW1eOzr7HyfQUFo0iV9CyrBVehQ0k7S867EBlwebzoykPY5LUOOQbcJksHE9ZnvznMCPumVkeBt0vPCGdWYEDUh6HT2sbdLVB-9oUshTs3LHWXXsBXEIqi0ttAUshdNuERYRz5vN3RcsQ85c5ulDiNH_s4GZUzzHq90mgKSHHFRcBH_ij4L-vlpOBwnVgZg-YD9g0S8ssDEIZnyau9Q
+owner_id = -226055102
+from_group = 1
