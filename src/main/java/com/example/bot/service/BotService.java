@@ -1,21 +1,22 @@
 package com.example.bot.service;
 
 
+import com.example.bot.companents.AppConstance;
 import com.example.bot.model.VkObject;
 import com.example.bot.model.VkUpdate;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
+import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static com.example.bot.companents.AppConstance.VK_API_URL;
+import static com.example.bot.companents.AppConstance.VK_API_VERSION;
 
 /**
  * @description: TODO
@@ -27,8 +28,6 @@ import java.util.Map;
 @Slf4j
 public class BotService {
 
-    private static final String VK_API_URL = "https://api.vk.com/method/messages.send";
-    private static final String VK_API_VERSION = "5.236";
 
     @Value("${vk.api.token}")
     private String vkApiToken;
@@ -83,7 +82,8 @@ public class BotService {
         HttpEntity<Map<String, String>> entity = new HttpEntity<>(params, headers);
 
         try {
-            restTemplate.exchange(VK_API_URL, HttpMethod.POST, entity, String.class);
+            ResponseEntity<String> exchange = restTemplate.exchange(VK_API_URL, HttpMethod.POST, entity, String.class);
+            log.info("Sent message to VK user: {}", exchange);
         } catch (RestClientException e) {
             log.error("Failed to send message to VK user: {}", userId, e);
         }
